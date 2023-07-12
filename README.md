@@ -3,8 +3,8 @@
 This repository is the collection of datasets, involving the 3D LiDAR. In this repository, the overall dataset table is represented the number and kind of LiDARs, objective of Datasets, and scale information. Objectives were not divided in detail, but were divided into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR) and Localization. In addition, if data exceeding 1 km is included, it is displayed as large scale.
 
 ## Recent Update
-## Update: 2023-07-12
-- Firstly divide the 3D LiDAR datasets
+### Update: 2023-07-12
+- Firstly divide the collection of 3D LiDAR datasets.
 
 |Dataset|Year                         |Single vs Multi|Spinning and Solid                           |Objective   |Scale|
 |-------|-----------------------------|---------------|---------------------------------------------|------------|-----|
