@@ -38,3 +38,4 @@ This repository is the collection of datasets, involving the 3D LiDAR. In this r
 |[Wild Places](https://csiro-robotics.github.io/Wild-Places/)|2023                         |Single         |1 VLP                                        |PR          |Large|
 |[Hilti 2023 SLAM Dataset](https://hilti-challenge.com/dataset-2023.html)|2023                         |Single w. Multiple LiDAR|1 Hesai, 1 Robosense (each)                  |Odom        |Small|
 |[City Dataset](https://github.com/minwoo0611/MA-LIO)|2023                         |Multi|1 Ouster, 2 Livox                  |Odom        |Large|
+|[Ground-Challenge](https://github.com/sjtuyinjie/Ground-Challenge)|2023                         |Single|1 VLP                  |Odom        |Small|
