@@ -1,6 +1,6 @@
 # Awesome 3D LiDAR Datasets [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This repository is the collection of datasets, involving the 3D LiDAR. In this repository, the overall dataset table is represented the number and kind of LiDARs, objective of Datasets, and scale information. Objectives were not divided in detail, but were divided into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR) and Localization. In addition, if data exceeding 1 km is included, it is displayed as large scale.
+This repository is the collection of datasets, involving the 3D LiDAR. In this repository, the overall dataset table is represented the number and kind of LiDARs, objective of Datasets, and scale information. Objectives were not divided in detail, but were divided into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR) and Localization. In addition, if data exceeding 1 km is included, it is displayed as large scale. Furthermore, Single w. Multiple LiDAR represents that the sequences consist of multiple LiDAR; however, they does not acheived simultaneously.
 
 ## Recent Update
 ### Update: 2023-07-12
