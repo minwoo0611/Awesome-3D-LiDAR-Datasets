@@ -41,6 +41,7 @@ The table below summarizes the details of each dataset:
 |[USTC FLICAR](https://ustc-flicar.github.io/)|2023|Multi|1x HDL-32E, 1x VLP-32C, 1x OS0-128|1x Livox Avia|Odom|Small|
 |[WOMD Dataset](https://waymo.com/open/data/motion/)|2023|Single|1x Spinning (Unknown)|No|OD|Large|
 |[Wild Places](https://csiro-robotics.github.io/Wild-Places/)|2023|Single|1x VLP-16C|No|PR|Large|
+|[FusionPortable](https://fusionportable.github.io/dataset/fusionportable/)|2022|Single|1x OS1-128|No|Odom|Small|
 |[Hilti 2023 SLAM Dataset](https://hilti-challenge.com/dataset-2023.html)|2023|Single w. Multiple LiDAR|1x PandarXT-32, 1x Robosense BPearl (each)|No|Odom|Small|
 |[City Dataset](https://github.com/minwoo0611/MA-LIO)|2023|Multi|1x OS2-128|1x Livox Tele, 1x Livox Avia|Odom|Large
 |[Ground-Challenge](https://github.com/sjtuyinjie/Ground-Challenge)|2023|Single|1 $\times$ VLP-16C|No|Odom|Small|
