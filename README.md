@@ -4,7 +4,7 @@ This repository is the collection of datasets, involving the 3D LiDAR. The infor
 
 ## Most Recent Update
 ### Update: 2024-02-23
-- Updates recent 2024 datasets (MARS-LVIG dataset, M2DGR-plus, LiDAR-degeneracy-datasets)
+- Updates recent 2024 datasets (MARS-LVIG dataset, M2DGR-plus, LiDAR-degeneracy-dataset and BotanicGarden)
 ### Update: 2023-07-13
 - The table includes the specific LiDAR products utilized in each dataset, involving the its channels or name.
 ### Update: 2023-07-12
@@ -56,4 +56,4 @@ The table below summarizes the details of each dataset:
 |[MARS-LVIG dataset](https://journals.sagepub.com/doi/full/10.1177/02783649241227968)|2024|Single|No|1x Livox Avia|Odom, Loc|Large|
 |[M2DGR-plus](https://github.com/SJTU-ViSYS/M2DGR-plus?tab=readme-ov-file)|2024|Single|1x RS LiDAR 16C|No|Odom|Small|
 |[LiDAR-Degeneray-Datasets](https://github.com/ntnu-arl/lidar_degeneracy_datasets)|2024|Single|1x OS0-128|No|Odom|Small|
-
+|[BotanicGarden](https://github.com/robot-pesg/BotanicGarden)|2024|Multi|1x VLP-16|1x Livox Avia|Odom, Loc, PR|Large|
