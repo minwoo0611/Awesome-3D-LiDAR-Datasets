@@ -57,3 +57,4 @@ The table below summarizes the details of each dataset:
 |[M2DGR-plus](https://github.com/SJTU-ViSYS/M2DGR-plus?tab=readme-ov-file)|2024|Single|1x RS LiDAR 16C|No|Odom|Small|
 |[LiDAR-Degeneray-Datasets](https://github.com/ntnu-arl/lidar_degeneracy_datasets)|2024|Single|1x OS0-128|No|Odom|Small|
 |[BotanicGarden](https://github.com/robot-pesg/BotanicGarden)|2024|Multi|1x VLP-16|1x Livox Avia|Odom, Loc, PR|Large|
+|[3DRef](https://3dref.github.io/)|2024|Multi|1x OS0-128, 1x Hesai QT64|1x Livox Avia|Seg|
