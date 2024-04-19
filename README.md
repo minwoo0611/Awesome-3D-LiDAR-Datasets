@@ -3,6 +3,8 @@
 This repository is the collection of datasets, involving the 3D LiDAR. The information is presented in a comprehensive table, outlining the type and number of LiDARs, the purpose of each dataset, and scale details. The objectives are broadly categorized into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR), and Localization (Loc). If a dataset includes data exceeding 1 km, it is classified as large scale. Datasets that use multiple LiDAR sequences, even if not executed concurrently, are labeled as 'Single w. Multiple LiDAR'.
 
 ## Most Recent Update
+### Update: 2024-04-19
+- Updates recent datasets (FusionPortableV2)
 ### Update: 2024-02-23
 - Updates recent 2024 datasets (MARS-LVIG dataset, M2DGR-plus, LiDAR-degeneracy-dataset and BotanicGarden)
 ### Update: 2023-07-13
@@ -58,3 +60,4 @@ The table below summarizes the details of each dataset:
 |[LiDAR-Degeneray-Datasets](https://github.com/ntnu-arl/lidar_degeneracy_datasets)|2024|Single|1x OS0-128|No|Odom|Small|
 |[BotanicGarden](https://github.com/robot-pesg/BotanicGarden)|2024|Multi|1x VLP-16|1x Livox Avia|Odom, Loc, PR|Large|
 |[3DRef](https://3dref.github.io/)|2024|Multi|1x OS0-128, 1x Hesai QT64|1x Livox Avia|Seg|
+|[FusionPortableV2](https://fusionportable.github.io/dataset/fusionportable_v2/#various-platforms-and-scenarios)|2024|Single|1x OS1-128|No|Odom|Large|
