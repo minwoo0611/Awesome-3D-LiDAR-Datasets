@@ -1,6 +1,6 @@
 # Awesome 3D LiDAR Datasets [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This repository is the collection of datasets, involving the 3D LiDAR. The information is presented in a comprehensive table, outlining the type and number of LiDARs, the purpose of each dataset, and scale details. The objectives are broadly categorized into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR), and Localization (Loc). If a dataset includes data exceeding 1 km, it is classified as large scale. Datasets that use multiple LiDAR sequences, even if not executed concurrently, are labeled as 'Single w. Multiple LiDAR'.
+This repository is the collection of datasets, involving the 3D LiDAR. The information is presented in a comprehensive table, outlining the type and number of LiDARs, the purpose of each dataset, and scale details. The objectives are broadly categorized into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR), Depth Estimation (Depth) and Localization (Loc). If a dataset includes data exceeding 1 km, it is classified as large scale. Datasets that use multiple LiDAR sequences, even if not executed concurrently, are labeled as 'Single w. Multiple LiDAR'.
 
 ## Most Recent Update
 ### Update: 2024-04-19
@@ -30,6 +30,7 @@ The table below summarizes the details of each dataset:
 |[nuScences](https://www.nuscenes.org/)|2020|Single|1x HDL-32E|No|OD|Large|
 |[Ford AV Dataset](https://avdata.ford.com/)|2020|Multi|4x HDL-32E|No|Odom|Large|
 |[LIBRE](https://sites.google.com/g.sp.m.is.nagoya-u.ac.jp/libre-dataset)|2020|Single w. Multiple LiDAR|12x Spinning (each)|No|Odom|Large|
+|[DurLAR](https://github.com/l1997i/DurLAR)|2021|Single|2x OS1-128|No|Depth|Large|
 |[EU Long-term Dataset](https://epan-utbm.github.io/utbm_robocar_dataset/)|2021|Multi|2x HDL-32E|No|Odom|Large|
 |[NTU VIRAL Dataset](https://ntu-aris.github.io/ntu_viral_dataset/)|2021|Multi|2x OS1-16|No|Odom|Small|
 |[M2DGR](https://github.com/SJTU-ViSYS/M2DGR)|2021|Single|1x VLP-32C|No|Odom|Large|
@@ -55,6 +56,7 @@ The table below summarizes the details of each dataset:
 |[Boreas](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjR4MSfo-qBAxXgh1YBHeQIB7AQFnoECAgQAQ&url=https%3A%2F%2Fwww.boreas.utias.utoronto.ca%2F&usg=AOvVaw2zQ4gkfyDfI3aPIxXUL56v&opi=89978449)|2023|Single|1x VLP-128|No|Odom,PR,OD|Large|
 |[HeLiPR](https://sites.google.com/view/heliprdataset)|2023|Multi|1x OS1-64, 1x VLP-16|1x Livox Avia, 1x Aeva Aeries II|Odom,PR|Large|
 |[A Multi-LiDAR Multi-UAV Dataset](https://tiers.github.io/multi_lidar_multi_uav_dataset/)|2023|Multi|1x OS1-64|1x Livox Mid, 1x Livox 360|Odom|Small|
+|[ParisLuco3D](https://npm3d.fr/parisluco3d)|2023|Single|1x HDL-32E|No|Seg, OD|Large|
 |[MARS-LVIG dataset](https://journals.sagepub.com/doi/full/10.1177/02783649241227968)|2024|Single|No|1x Livox Avia|Odom, Loc|Large|
 |[M2DGR-plus](https://github.com/SJTU-ViSYS/M2DGR-plus?tab=readme-ov-file)|2024|Single|1x RS LiDAR 16C|No|Odom|Small|
 |[LiDAR-Degeneray-Datasets](https://github.com/ntnu-arl/lidar_degeneracy_datasets)|2024|Single|1x OS0-128|No|Odom|Small|
