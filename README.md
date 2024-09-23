@@ -3,6 +3,8 @@
 This repository is the collection of datasets, involving the 3D LiDAR. The information is presented in a comprehensive table, outlining the type and number of LiDARs, the purpose of each dataset, and scale details. The objectives are broadly categorized into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR), Depth Estimation (Depth) and Localization (Loc). If a dataset includes data exceeding 1 km, it is classified as large scale. Datasets that use multiple LiDAR sequences, even if not executed concurrently, are labeled as 'Single w. Multiple LiDAR'.
 
 ## Most Recent Update
+### Update: 2023-09-23
+- Updates recent datasets (HeLiMOS, GEODE and HK MEMS dataset)
 ### Update: 2024-04-19
 - Updates recent datasets (FusionPortableV2)
 ### Update: 2024-02-23
@@ -11,6 +13,7 @@ This repository is the collection of datasets, involving the 3D LiDAR. The infor
 - The table includes the specific LiDAR products utilized in each dataset, involving the its channels or name.
 ### Update: 2023-07-12
 - Initial segregation of the 3D LiDAR dataset collection.
+
 
 The table below summarizes the details of each dataset:
 
@@ -63,3 +66,6 @@ The table below summarizes the details of each dataset:
 |[BotanicGarden](https://github.com/robot-pesg/BotanicGarden)|2024|Multi|1x VLP-16|1x Livox Avia|Odom, Loc, PR|Large|
 |[3DRef](https://3dref.github.io/)|2024|Multi|1x OS0-128, 1x Hesai QT64|1x Livox Avia|Seg|
 |[FusionPortableV2](https://fusionportable.github.io/dataset/fusionportable_v2/#various-platforms-and-scenarios)|2024|Single|1x OS1-128|No|Odom|Large|
+|[HeLiMOS](https://sites.google.com/view/helimos)|2024|Multi|1x OS2-128, 1x VLP-16C|1x Livox Avia, 1x Aeva Aeries II|Seg|Large|
+|[GEODE Dataset](https://github.com/PengYu-Team/GEODE_dataset)|2024|Multi|1x VLP-16C, 1x OS1-64|1x Livox Avia|Odom|Large|
+|[HK MEMS Dataset](https://github.com/RuanJY/HK_MEMS_Dataset)|2024|Multi|1x OS1-32|1x Robosense M1 LiDAR, 1x Realsense L515|Odom|Large|
