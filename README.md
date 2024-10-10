@@ -383,7 +383,7 @@ The table below summarizes the details of each dataset:
 
 ### [USTC FLICAR](https://ustc-flicar.github.io/)
 N
-- **Year**: 2022
+- **Year**: 2023
 - **Sensor**: 1x Velodyne HDL-32E, 1x Ouster OS0-128, 1x Livox Avia, 1x Velodyne VLP-32C, 1x PointGrey Bumblebee xb3, 1x PointGrey Bumblebee xb2, 1x Hikvision MV-CB016-10GC-C, 1x Hikvision MV-CE060-10UC, 1x Xsens MTi-G-710
 - **Objective**: SLAM, Semantic Segmentation 
 - **Environment**: Urban
@@ -396,85 +396,85 @@ N
 
 ### [Wild Places](https://csiro-robotics.github.io/Wild-Places/)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+
+- **Year**: 2023
+- **Sensor**: 1x VLP-16, 4x e-CAM130ACUXVR Camera, 1x 3DM-CV5-25 IMU
+- **Objective**: Place Recognition
+- **Environment**: Forest 
+- **System**: Handheld
+- **Publication**: ICRA
+- **Abstract**: Many existing datasets for lidar place recognition are solely representative of structured urban environments, and have recently been saturated in performance by deep learning based approaches. Natural and unstructured environments present many additional challenges for the tasks of long-term localisation but these environments are not represented in currently available datasets. To address this we introduce Wild-Places, a challenging large-scale dataset for lidar place recognition in unstructured, natural environments. Wild-Places contains eight lidar sequences collected with a handheld sensor payload over the course of fourteen months, containing a total of 63K undistorted lidar submaps along with accurate 6DoF ground truth. Our dataset contains multiple revisits both within and between sequences, allowing for both intra-sequence (i.e. loop closure detection) and inter-sequence (i.e. re-localisation) place recognition. We also benchmark several state-of-the-art approaches to demonstrate the challenges that this dataset introduces, particularly the case of long-term place recognition due to natural environments changing over time.
 
 ---
 
 ### [Hilti 2023 SLAM Dataset](https://hilti-challenge.com/dataset-2023.html)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x Robosense Bpearl, 4x Luxonis OAK-D, 1x XSens MTi670
+- **Objective**: SLAM
+- **Environment**: Construction site
+- **System**: Handheld & UGV
+- **Publication**: Arxiv
+- **Abstract**: Simultaneous Localization and Mapping systems are a key enabler for positioning in both handheld and robotic applications. The Hilti SLAM Challenges organized over the past years have been successful at benchmarking some of the world’s best SLAMSystems with high accuracy. However, more capabilities of these systems are yet to be explored, such as platform agnosticism across varying sensor suites and multi-session SLAM. These factors indirectly serve as an indicator of robustness and ease of deployment in real-world applications. There exists no dataset plus benchmark combination publicly available, which considers these factors combined. The Hilti SLAM Challenge 2023 Dataset and Benchmark addresses this issue. Additionally, we propose a novel fiducial marker design for a pre-surveyed point on the ground to be observable from an off-the-shelf LiDAR mounted on a robot, and an algorithm to estimate its position at mm-level accuracy. Results from the challenge show an increase in overall participation, single-session SLAM systems getting increasingly accurate, successfully operating across varying sensor suites, but relatively few participants performing multi-session SLAM. Dataset URL: https://www.hilti-challenge.com/dataset-2023.html
 
 ---
 
 ### [City Dataset](https://github.com/minwoo0611/MA-LIO)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x OS2-128, 1x Livox Tele, 1x Livox Avia, 1x Xsens MTi-300
+- **Objective**: SLAM
+- **Environment**: City
+- **System**: Vehicle
+- **Publication**: RA-L 
+- **Abstract**: In recent years, multiple Light Detection and Ranging (LiDAR) systems have grown in popularity due to their enhanced accuracy and stability from the increased field of view (FOV). However, integrating multiple LiDARs can be challenging, attributable to temporal and spatial discrepancies. Common practice is to transform points among sensors while requiring strict time synchronization or approximating transformation among sensor frames. Unlike existing methods, we elaborate the inter-sensor transformation using continuous-time (CT) inertial measurement unit (IMU) modeling and derive associated ambiguity as a point-wise uncertainty. This uncertainty, modeled by combining the state covariance with the acquisition time and point range, allows us to alleviate the strict time synchronization and to overcome FOV difference. The proposed method has been validated on both public and our datasets and is compatible with various LiDAR manufacturers and scanning patterns. We open-source the code for public access at https://github.com/minwoo0611/MA-LIO.
 
 ---
 
 ### [Ground-Challenge](https://github.com/sjtuyinjie/Ground-Challenge)
-
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x Velodyne VLP-16, 1x Realsense d435i, 1x Xsens Mti-300 IMU, 1x AgileX Wheel Odometer
+- **Objective**: SLAM
+- **Environment**: Indoor
+- **System**: UGV
+- **Publication**: ROBIO 
+- **Abstract**: We introduce Ground-Challenge: a novel dataset collected by a ground robot with multiple sensors including an RGB-D camera, an inertial measurement unit (IMU), a wheel odometer and a 3D LiDAR to support the research on corner cases of visual SLAM systems. Our dataset comprises 36 trajectories with diverse corner cases such as aggressive motion, severe occlusion, changing illumination, few textures, pure rotation, motion blur, wheel suspension, etc. Some state-of-the-art SLAM algorithms are tested on our dataset, showing that these systems are seriously drifting and even failing on specific sequences. We will release the dataset and relevant materials upon paper publication to benefit the research community.
 
 ---
 
 ### [RACECAR](https://github.com/linklab-uva/RACECAR_DATA)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 3x Luminar H3, 2x Novatel Pwrpak 7d, 6x Allied Vision Mak G319C, 2x Aptiv RADAR
+- **Objective**: Localization, Object Detection
+- **Environment**: Racing (High Speed)
+- **System**: Vehicle
+- **Publication**: Arxiv
+- **Abstract**: This paper describes the first open dataset for fullscale and high-speed autonomous racing. Multi-modal sensor data has been collected from fully autonomous Indy race cars operating at speeds of up to 170 mph (273 kph). Six teams who raced in the Indy Autonomous Challenge have contributed to this dataset. The dataset spans 11 interesting racing scenarios across two race tracks which include solo laps, multi-agent laps, overtaking situations, high-accelerations, banked tracks, obstacle avoidance, pit entry and exit at different speeds. The dataset contains data from 27 racing sessions across the 11 scenarios with over 6.5 hours of sensor data recorded from the track. The data is organized and released in both ROS2 and nuScenes format. We have also developed the ROS2-to-nuScenes conversion library to achieve this. The RACECAR data is unique because of the high-speed environment of autonomous racing. We present several benchmark problems on localization, object detection and tracking (LiDAR, Radar, and Camera), and mapping using the RACECAR data to explore issues that arise at the limits of operation of the vehicle.
 
 ---
 
 ### [ConSLAM](https://github.com/mac137/ConSLAM)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x Velodyne VLP-16, 1x Alvium U-319c, 1x Alvium 1800 U-501, 1x Xsens MTi-610
+- **Objective**: SLAM
+- **Environment**: Construction Site
+- **System**: Handheld
+- **Publication**: ECCV 
+- **Abstract**: This paper presents a dataset collected periodically on a construction site. The dataset aims to evaluate the performance of SLAM algorithms used by mobile scanners or autonomous robots. It includes ground-truth scans of a construction site collected using a terrestrial laser scanner along with five sequences of spatially registered and time-synchronized images, LiDAR scans and inertial data coming from our prototypical hand-held scanner. We also recover the ground-truth trajectory of the mobile scanner by registering the sequential LiDAR scans to the ground-truth scans and show how to use a popular software package to measure the accuracy of SLAM algorithms against our trajectory automatically. To the best of our knowledge, this is the first publicly accessible dataset consisting of periodically collected sequential data on a construction site.
 
 ---
 
 ### [Pohang Canal Dataset](https://sites.google.com/view/pohang-canal-dataset/home?authuser=0)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x OS1-64, 2x OS1-32, 1x Simrad Radar, 1x Flir Ladybug 5+, 1x Flir blackfly, 1x Flir A65 InfraRed, 1x Microstrain 3DM-GX5-45, 2x SinoGNSS AT340 GNSS, 1x TDR-3000 GNSS-RTK Receiver
+- **Objective**: Autonomous Navigation
+- **Environment**: Canal 
+- **System**: Ship
+- **Publication**: IJRR 
+- **Abstract**: This paper presents a multimodal maritime dataset and the data collection procedure used to gather it, which aims to facilitate autonomous navigation in restricted water environments. The dataset comprises measurements obtained using various perception and navigation sensors, including a stereo camera, an infrared camera, an omnidirectional camera, three LiDARs, a marine radar, a global positioning system, and an attitude heading reference system. The data were collected along a 7.5-km-long route that includes a narrow canal, inner and outer ports, and near-coastal areas in Pohang, South Korea. The collection was conducted under diverse weather and visual conditions. The dataset and its detailed description are available for free download at https://sites.google.com/view/pohang-canal-dataset.
 
 ---
 
