@@ -3,14 +3,8 @@
 This repository is the collection of datasets, involving the 3D LiDAR. The information is presented in a comprehensive table, outlining the type and number of LiDARs, the purpose of each dataset, and scale details. The objectives are broadly categorized into Object Detection (OD), Segmentation (Seg), Odometry (Odom), Place Recognition (PR), Depth Estimation (Depth) and Localization (Loc). If a dataset includes data exceeding 1 km, it is classified as large scale. Datasets that use multiple LiDAR sequences, even if not executed concurrently, are labeled as 'Single w. Multiple LiDAR'.
 
 ## Most Recent Update
-### Update: 2024-09-24
+### Update: 2024-11-12
 - Adds the full description of some datasets (continuing)
-### Update: 2023-09-23
-- Updates recent datasets (HeLiMOS, GEODE and HK MEMS dataset)
-### Update: 2024-04-19
-- Updates recent datasets (FusionPortableV2)
-### Update: 2024-02-23
-- Updates recent 2024 datasets (MARS-LVIG dataset, M2DGR-plus, LiDAR-degeneracy-dataset and BotanicGarden)
 ### Update: 2023-07-13
 - The table includes the specific LiDAR products utilized in each dataset, involving the its channels or name.
 ### Update: 2023-07-12
@@ -480,97 +474,96 @@ N
 
 ### [Boreas](https://www.boreas.utias.utoronto.ca/)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: Velodyne Alpha-Prime (128-beam) lidar, a FLIR Blackfly S camera, a Navtech CIR304-H radar, and an Applanix POS LV GNSS-INS.
+- **Objective**: Odometry, Metric Localization, 3D Object Detection
+- **Environment**: Urban
+- **System**: Vehicle
+- **Publication**: IJRR
+- **Abstract**: The Boreas dataset was collected by driving a repeated route over the course of one year, resulting in stark seasonal variations and adverse weather conditions such as rain and falling snow. In total, the Boreas dataset includes over 350km of driving data featuring a 128-channel Velodyne Alpha Prime lidar, a 360◦ Navtech CIR304-H scanning radar, a 5MP FLIR Blackfly S camera, and centimetre-accurate post-processed ground truth poses. Our dataset will support live leaderboards for odometry, metric localization, and 3D object detection. The dataset and development kit are available at [boreas.utias.utoronto.ca.](boreas.utias.utoronto.ca.)
 
 ---
 
 ### [HeLiPR](https://sites.google.com/view/heliprdataset)
-
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x Ouster OS2-128, 1x Velodyne VLP-16, 1x Livox Avia, 1x Aeva AeriesII, 1x Xsens MTi-300, 1x SPAN-CPT7
+- **Objective**: Place Recognition, SLAM
+- **Environment**: Urban
+- **System**: Vehicle
+- **Publication**: IJRR
+- **Abstract**: Place recognition is crucial for robot localization and loop closure in simultaneous localization and mapping (SLAM). Light Detection and Ranging (LiDAR), known for its robust sensing capabilities and measurement consistency even in varying illumination conditions, has become pivotal in various fields, surpassing traditional imaging sensors in certain applications. Among various types of LiDAR, spinning LiDARs are widely used, while non-repetitive scanning patterns have recently been utilized in robotics applications. Some LiDARs provide additional measurements such as reflectivity, Near Infrared (NIR), and velocity from Frequency modulated continuous wave (FMCW) LiDARs. Despite these advances, there is a lack of comprehensive datasets reflecting the broad spectrum of LiDAR configurations for place recognition. To tackle this issue, our paper proposes the HeLiPR dataset, curated especially for place recognition with heterogeneous LiDARs, embodying spatiotemporal variations. To the best of our knowledge, the HeLiPR dataset is the first heterogeneous LiDAR dataset supporting inter-LiDAR place recognition with both nonrepetitive and spinning LiDARs, accommodating different field of view (FOV)s and varying numbers of rays. The dataset covers diverse environments, from urban cityscapes to high-dynamic freeways, over a month, enhancing adaptability and robustness across scenarios. Notably, HeLiPR includes trajectories parallel to MulRan sequences, making it valuable for research in heterogeneous LiDAR place recognition and long-term studies. The dataset is accessible at https://sites.google.com/view/heliprdataset.
 
 ---
 
 ### [A Multi-LiDAR Multi-UAV Dataset](https://tiers.github.io/multi_lidar_multi_uav_dataset/)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x Ouster OS1-64, 1x Livox Mid360, 1x Livox Avia, 1x Intel RealSense D435, MOCAP
+- **Objective**: Odomety, SLAM
+- **Environment**: Indoor, Unstructured
+- **System**: Drone
+- **Publication**: ROBIO
+- **Abstract**: With the increasing prevalence of drones in various industries, the navigation and tracking of unmanned aerial vehicles (UAVs) in challenging environments, particularly GNSSdenied areas, have become crucial concerns. To address this need, we present a novel multi-LiDAR dataset specifically designed for UAV tracking. Our dataset includes data from a spinning LiDAR, two solid-state LiDARs with different Field of View (FoV) and scan patterns, and an RGB-D camera. This diverse sensor suite allows for research on new challenges in the field, including limited FoV adaptability and multi-modality data processing. The dataset facilitates the evaluation of existing algorithms and the development of new ones, paving the way for advances in UAV tracking techniques. Notably, we provide data in both indoor and outdoor environments. We also consider variable UAV sizes, from micro-aerial vehicles to more standard commercial UAV platforms. The outdoor trajectories are selected with close proximity to buildings, targeting research in UAV detection in urban areas, e.g., within counter-UAV systems or docking for UAV logistics. Holybro X500 Autel Evo II Optitrack PrimeX 22 Camera Tello Fig. 1: Illustration of the hardware used in the experiments. At the bottom, the tracking sensors including Ouster OS1-64, Livox Mid360, Livox Avia and Intel RealSense D435. In addition to the dataset, we provide a baseline comparison with recent LiDAR-based UAV tracking algorithms, benchmarking the performance with different sensors, UAVs, and algorithms. Importantly, our dataset shows that current methods have shortcomings and are unable to track UAVs consistently across different scenarios.
 
 ---
 
 ### [ParisLuco3D](https://npm3d.fr/parisluco3d)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2023
+- **Sensor**: 1x Velodyne HDL 32E
+- **Objective**: Segmentation, Detection
+- **Environment**: Urban
+- **System**: Vehicle
+- **Publication**: RA-L
+- **Abstract**: LiDAR is an essential sensor for autonomous driving by collecting precise geometric information regarding a scene. As the performance of various LiDAR perception tasks has improved, generalizations to new environments and sensors has emerged to test these optimized models in real-world conditions. Unfortunately, the various annotation strategies of data providers complicate the computation of cross-domain performances. This paper provides a novel dataset, ParisLuco3D, specifically designed for cross-domain evaluation to make it easier to evaluate the performance utilizing various source datasets. Alongside the dataset, online benchmarks for LiDAR semantic segmentation, LiDAR object detection, and LiDAR tracking are provided to ensure a fair comparison across methods. The ParisLuco3D dataset, evaluation scripts, and links to benchmarks can be found at the following website: https://npm3d.fr/parisluco3d
 
 ---
 
 ### [MARS-LVIG dataset](https://journals.sagepub.com/doi/full/10.1177/02783649241227968)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Livox Avia, 1x Hikvision CA-050-11UC, 1x u-blox ZED-F9P, 1x DJI L1
+- **Objective**: SLAM
+- **Environment**: Airfield, Island, Rural town, and Valley
+- **System**: Drone
+- **Publication**: IJRR
+- **Abstract**: In recent years, advancements in Light Detection and Ranging (LiDAR) technology have made 3D LiDAR sensors more compact, lightweight, and affordable. This progress has spurred interest in integrating LiDAR with sensors such as Inertial Measurement Units (IMUs) and cameras for Simultaneous Localization and Mapping (SLAM) research. Public datasets covering different scenarios, platforms, and viewpoints are crucial for multi-sensor fusion SLAM studies, yet most focus on handheld or vehicle-mounted devices with front or 360-degree views. Data from aerial vehicles with downward-looking views is scarce, existing relevant datasets usually feature low altitudes and are mostly limited to small campus environments. To fill this gap, we introduce the Multi-sensor Aerial Robots SLAM dataset (MARS-LVIG dataset), providing unique aerial downward-looking LiDAR-Visual-Inertial-GNSS data with viewpoints from altitudes between 80 m and 130 m. The dataset not only offers new aspects to test and evaluate existing SLAM algorithms, but also brings new challenges which can facilitate researches and developments of more advanced SLAM algorithms. The MARS-LVIG dataset contains 21 sequences, acquired across diversified large-area environments including an aero-model airfield, an island, a rural town, and a valley. Within these sequences, the UAV has speeds varying from 3 m/s to 12 m/s, a scanning area reaching up to 577,000 m2, and the max path length of 7.148 km in a single flight. This dataset encapsulates data collected by a lightweight, hardware-synchronized sensor package that includes a solid-state 3D LiDAR, a global-shutter RGB camera, IMUs, and a raw message receiver of the Global Navigation Satellite System (GNSS). For algorithm evaluation, this dataset releases ground truth of both localization and mapping, which are acquired by on-board Real-time Kinematic (RTK) and DJI L1 (post-processed by its supporting software DJI Terra), respectively. The dataset can be downloaded from: https://mars.hku.hk/dataset.html.
 
 ---
 
 ### [M2DGR-plus](https://github.com/SJTU-ViSYS/M2DGR-plus?tab=readme-ov-file)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Robosense 16, 1x Ublox F9p, 1x Realsense d435i, 1x Xsens Mti 680G, 1x Vicon Vero 2.2
+- **Objective**: SLAM
+- **Environment**: Outdoor (Bridge, Street, Parking Lot and Building)
+- **System**: UGV
+- **Publication**: ICRA 
+- **Abstract**: We introduce Ground-Fusion, a low-cost sensor fusion simultaneous localization and mapping (SLAM) system for ground vehicles. Our system features efficient initialization, effective sensor anomaly detection and handling, realtime dense color mapping, and robust localization in diverse environments. We tightly integrate RGB-D images, inertial measurements, wheel odometer and GNSS signals within a factor graph to achieve accurate and reliable localization both indoors and outdoors. To ensure successful initialization, we propose an efficient strategy that comprises three different methods: stationary, visual, and dynamic, tailored to handle diverse cases. Furthermore, we develop mechanisms to detect sensor anomalies and degradation, handling them adeptly to maintain system accuracy. Our experimental results on both public and self-collected datasets demonstrate that Ground-Fusion outperforms existing low-cost SLAM systems in corner cases. We release the code and datasets at https://github.com/SJTUViSYS/Ground-Fusion.
 
 ---
 
 ### [LiDAR-Degeneray-Datasets](https://github.com/ntnu-arl/lidar_degeneracy_datasets)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Ouster OS0-128, 1x VectorNav VN100, 1x Texas Instruments IWR6843AOP-EVM (Radar)
+- **Objective**: Odometry
+- **Environment**: Degraded Indoor
+- **System**: Drone
+- **Publication**: ICRA
+- **Abstract**: Enabling autonomous robots to operate robustly in challenging environments is necessary in a future with increased autonomy. For many autonomous systems, estimation and odometry remains a single point of failure, from which it can often be difficult, if not impossible, to recover. As such robust odometry solutions are of key importance. In this work a method for tightly-coupled LiDAR-Radar-Inertial fusion for odometry is proposed, enabling the mitigation of the effects of LiDAR degeneracy by leveraging a complementary perception modality while preserving the accuracy of LiDAR in wellconditioned environments. The proposed approach combines modalities in a factor graph-based windowed smoother with sensor information-specific factor formulations which enable, in the case of degeneracy, partial information to be conveyed to the graph along the non-degenerate axes. The proposed method is evaluated in real-world tests on a flying robot experiencing degraded conditions including geometric self-similarity as well as obscurant occlusion. For the benefit of the community we release the datasets presented: https://github.com/ ntnu-arl/lidar_degeneracy_datasets.
 
 ---
 
 ### [BotanicGarden](https://github.com/robot-pesg/BotanicGarden)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Velodyne VLP-16, 1x Livox Avia, 1x Xsens MTi-680G, 1x Leica RTC360, 1x Scout V1.0, 1x BMI088, 1x DALSA M1930, 1x DALSA C1930
+- **Objective**: SLAM, Semantic Segmentation
+- **Environment**: Unstructured Natural
+- **System**: UGV
+- **Publication**: RA-L 
+- **Abstract**: The rapid developments of mobile robotics and autonomous navigation over the years are largely empowered by public datasets for testing and upgrading, such as sensor odometry and SLAM tasks. Impressive demos and benchmark scores have arisen, which may suggest the maturity of existing navigation techniques. However, these results are primarily based on moderate structured scenario testing. When transitioning to challenging unstructured environments, especially in GNSS-denied, texture-monotonous, and dense-vegetated natural fields, their performance can hardly sustain at a high level and requires further validation and improvement. To bridge this gap, we build a novel robot navigation dataset in a luxuriant botanic garden of more than 48000m2. Comprehensive sensors are used, including Gray and RGB stereo cameras, spinning and MEMS 3D LiDARs, and low-cost and industrial-grade IMUs, all of which are well calibrated and hardware-synchronized. An all-terrain wheeled robot is employed for data collection, traversing through thick woods, riversides, narrow trails, bridges, and grasslands, which are scarce in previous resources. This yields 33 short and long sequences, forming 17.1km trajectories in total. Excitedly, both highly-accurate ego-motions and 3D map ground truth are provided, along with fine-annotated vision semantics. We firmly believe that our dataset can advance robot navigation and sensor fusion research to a higher level.
 
 ---
 
@@ -587,58 +580,59 @@ N
 ---
 ### [3DRef](https://3dref.github.io/)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x OS0-128, 1x Livox Avia, 1x Hesai QT64, 1x Insta360
+- **Objective**: Reflection Detection (Semantic Segmentation)
+- **Environment**: Indoor
+- **System**: Handheld
+- **Publication**: 3DV
+- **Abstract**: Reflective surfaces present a persistent challenge for reliable 3D mapping and perception in robotics and autonomous systems. However, existing reflection datasets and benchmarks remain limited to sparse 2D data. This paper introduces the first large-scale 3D reflection detection dataset containing more than 50,000 aligned samples of multi-return Lidar, RGB images, and 2D/3D semantic labels across diverse indoor environments with various reflections. Textured 3D ground truth meshes enable automatic point cloud labeling to provide precise ground truth annotations. Detailed benchmarks evaluate three Lidar point cloud segmentation methods, as well as current state-of-theart image segmentation networks for glass and mirror detection. The proposed dataset advances reflection detection by providing a comprehensive testbed with precise global alignment, multi-modal data, and diverse reflective objects and materials. It will drive future research towards reliable reflection detection. The dataset is publicly available at http://3dref.github.io
 
 ---
 
 ### [FusionPortableV2](https://fusionportable.github.io/dataset/fusionportable_v2/#various-platforms-and-scenarios)
-
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Ouster OS1-128, 1x FLIR BFS-U3-31S4C, 1x DAVIS346, 1x STIM300, 1x MPU6150, 1x ICM20948, 1x 3DM-GQ7-GNSS/INS, 1x Omron E6B2-CWZ6C, 1x Leica BLK360, 1x Leica MS60
+- **Objective**: SLAM
+- **Environment**: Indoor and Outdoor
+- **System**: Handheld, Legged Robot, UGV, Vehicle
+- **Publication**: IJRR
+- **Abstract**: Simultaneous Localization and Mapping (SLAM) technology has been widely applied in various robotic scenarios, from rescue operations to autonomous driving. However, the generalization of SLAM algorithms remains a significant challenge, as current datasets often lack scalability in terms of platforms and environments. To address this limitation, we present FusionPortableV2, a multi-sensor SLAM dataset featuring sensor diversity, varied motion patterns, and a wide range of environmental scenarios. Our dataset comprises 27 sequences, spanning over 2.5 hours and collected from four distinct platforms: a handheld suite, a legged robot, a unmanned ground vehicle (UGV), and a vehicle. These sequences cover diverse settings, including buildings, campuses, and urban areas, with a total length of 38.7km. Additionally, the dataset includes ground-truth (GT) trajectories and RGB point cloud maps covering approximately 0.3km2. To validate the utility of our dataset in advancing SLAM research, we assess several state-of-the-art (SOTA) SLAM algorithms. Furthermore, we demonstrate the dataset’s broad application beyond traditional SLAM tasks by investigating its potential for monocular depth estimation. The completae dataset, including sensor data, GT, and calibration details, is accessible at https://fusionportable.github.io/dataset/fusionportable v2.
 
 ---
 
 ### [HeLiMOS](https://sites.google.com/view/helimos)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Ouster OS2-128, 1x Velodyne VLP-16, 1x Livox Avia, 1x Aeva AeriesII, 1x Xsens MTi-300, 1x SPAN-CPT7
+- **Objective**: Moving Object Segmentation
+- **Environment**: Outdoor
+- **System**: Vehicle
+- **Publication**: IROS
+- **Abstract**: Moving object segmentation (MOS) using a 3D light detection and ranging (LiDAR) sensor is crucial for scene understanding and identification of moving objects. Despite the availability of various types of 3D LiDAR sensors in the market, MOS research still predominantly focuses on 3D point clouds from mechanically spinning omnidirectional LiDAR sensors. Thus, we are, for example, lacking a dataset with MOS labels for point clouds from solid-state LiDAR sensors which have irregular scanning patterns. In this paper, we present a labeled dataset, called HeLiMOS, that enables to test MOS approaches on four heterogeneous LiDAR sensors, including two solid-state LiDAR sensors. Furthermore, we introduce a novel automatic labeling method to substantially reduce the labeling effort required from human annotators. To this end, our framework exploits an instance-aware static map building approach and tracking-based false label filtering. Finally, we provide experimental results regarding the performance of commonly used state-of-the-art MOS approaches on HeLiMOS that suggest a new direction for a sensor-agnostic MOS, which generally works regardless of the type of LiDAR sensors used to capture 3D point clouds. Our dataset is available at https://sites.google.com/view/helimos.
 
 ---
 
 ### [GEODE Dataset](https://github.com/PengYu-Team/GEODE_dataset)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Velodyne VLP-16, 1x Ouster OS1-64, 1x Livox Avia, 1x Xsens MTi-30, 1x HikRobot MV-CS050-10GC, 1x CHCNAV CGI610, 1x Vicon Vero 2.2, 1x Leica Nova MS60, 1x Leica RTC360
+- **Objective**: Odometry, SLAM
+- **Environment**: Degenerate Indoor and Outdoor (Flat Ground, Stairs, Metro Tunnel, Off-road, Inland Waterway, Bridges, Urban Tunnel)
+- **System**: Handheld, UGV, Sailboat
+- **Publication**: IJRR 
+- **Abstract**: The ability to estimate pose and generate maps using 3D LiDAR significantly enhances robotic system autonomy. However, existing open-source datasets lack representation of geometrically degenerate environments, limiting the development and benchmarking of robust LiDAR SLAM algorithms. To address this gap, we introduce GEODE, a comprehensive multi-LiDAR, multi-scenario dataset specifically designed to include real-world geometrically degenerate environments. GEODE comprises64trajectories spanning over 64 kilometers across seven diverse settings with varying degrees of degeneracy. The data was meticulously collected to promote the development of versatile algorithms by incorporating various LiDAR sensors, stereo cameras, IMUs, and diverse motion conditions. We evaluate state-of-the-art SLAM approaches using the GEODE dataset to highlight current limitations in LiDAR SLAM techniques. This extensive dataset will be publicly available at https://github.com/PengYu-Team/GEODE dataset, supporting further advancements in LiDAR-based SLAM.
 
 ---
 
 ### [HK MEMS Dataset](https://github.com/RuanJY/HK_MEMS_Dataset)
 
-- **Year**: 
-- **Sensor**: 
-- **Objective**: 
-- **Environment**: 
-- **System**: 
-- **Publication**: 
-- **Abstract**: 
+- **Year**: 2024
+- **Sensor**: 1x Robosense M1, 1x Ouster OS1-32, 1x RealSense L515, 1x Xsens MTI-30, 1x CUAV V5+ (INS)
+- **Objective**: Odometry, SLAM
+- **Environment**: Urban (Tunnel, Dynamic Scenarios)
+- **System**: Handheld, UGV and Vehicle
+- **Publication**: Github (Under Review)
+- **Abstract**: This paper presents a multimodular dataset, HK-MEMS, incorporating data from MEMS LiDARs, a camera, GNSS, and Inertial Navigation Systems. To our best knowledge, it is the first dataset to offer automotive-grade MEMS LiDAR data on urban roads for research in Simultaneous Localization and Mapping (SLAM).
+This dataset emphasizes extreme environments like degenerate urban tunnels and dynamic scenarios, aiming to enhance the robustness of SLAM systems.
+We collect 187 minutes and 75.4 kilometers of data. State-of-the-art SLAM methods are evaluated on this benchmark. The result highlights the challenges in extreme environments and underscores the ongoing need to enhance the robustness of SLAM systems. This dataset serves as a valuable platform for exploring the potential and limitations of MEMS LiDAR, and a challenge to enhance the robustness of SLAM in urban navigation scenarios.
