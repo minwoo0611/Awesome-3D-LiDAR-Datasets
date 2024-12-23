@@ -25,7 +25,7 @@ The table below summarizes the details of each dataset:
 |[MulRan](https://sites.google.com/view/mulran-pr/dataset)|2020|Single|1x OS1-64|No|PR, Odom|Large|
 |[The Oxford Radar RobotCar Dataset](https://oxford-robotics-institute.github.io/radar-robotcar-dataset/)|2020|Multi|2x HDL-32E|No|Odom, PR|Large|
 |[Newer College Dataset](https://ori-drs.github.io/newer-college-dataset/)|2020|Single|1x OS1-64|No|Odom|Small|
-|[nuScences](https://www.nuscenes.org/)|2020|Single|1x HDL-32E|No|OD|Large|
+|[nuScenes](https://www.nuscenes.org/)|2020|Single|1x HDL-32E|No|OD|Large|
 |[Ford AV Dataset](https://avdata.ford.com/)|2020|Multi|4x HDL-32E|No|Odom|Large|
 |[LIBRE](https://sites.google.com/g.sp.m.is.nagoya-u.ac.jp/libre-dataset)|2020|Single w. Multiple LiDAR|12x Spinning (each)|No|Odom|Large|
 |[DurLAR](https://github.com/l1997i/DurLAR)|2021|Single|2x OS1-128|No|Depth|Large|
@@ -180,7 +180,7 @@ The table below summarizes the details of each dataset:
 
 ---
 
-### [nuScences](https://www.nuscenes.org/)
+### [nuScenes](https://www.nuscenes.org/)
 - **Year**: 2020
 - **Sensor**: 1x HDL-32E, 6x Camera RGB, 5x Radar, GPS, IMU
 - **Objective**: Object Detection
