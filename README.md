@@ -56,6 +56,7 @@ The table below summarizes the details of each dataset:
 |[ParisLuco3D](https://npm3d.fr/parisluco3d)|2023|Single|1x HDL-32E|No|Seg, OD|Large|
 |[MARS-LVIG dataset](https://journals.sagepub.com/doi/full/10.1177/02783649241227968)|2024|Single|No|1x Livox Avia|Odom, Loc|Large|
 |[M2DGR-plus](https://github.com/SJTU-ViSYS/M2DGR-plus?tab=readme-ov-file)|2024|Single|1x RS LiDAR 16C|No|Odom|Small|
+|[ENWIDE](https://projects.asl.ethz.ch/datasets/doku.php?id=enwide)|2024|Single|1x OS0-128|No|Odom|Small|
 |[LiDAR-Degeneray-Datasets](https://github.com/ntnu-arl/lidar_degeneracy_datasets)|2024|Single|1x OS0-128|No|Odom|Small|
 |[BotanicGarden](https://github.com/robot-pesg/BotanicGarden)|2024|Multi|1x VLP-16|1x Livox Avia|Odom, Loc, PR|Large|
 |[WOMD Dataset](https://waymo.com/open/data/motion/)|2024|Multi|1x mid range, 4x short range|No|OD|Large|
@@ -540,6 +541,18 @@ N
 - **System**: UGV
 - **Publication**: ICRA 
 - **Abstract**: We introduce Ground-Fusion, a low-cost sensor fusion simultaneous localization and mapping (SLAM) system for ground vehicles. Our system features efficient initialization, effective sensor anomaly detection and handling, realtime dense color mapping, and robust localization in diverse environments. We tightly integrate RGB-D images, inertial measurements, wheel odometer and GNSS signals within a factor graph to achieve accurate and reliable localization both indoors and outdoors. To ensure successful initialization, we propose an efficient strategy that comprises three different methods: stationary, visual, and dynamic, tailored to handle diverse cases. Furthermore, we develop mechanisms to detect sensor anomalies and degradation, handling them adeptly to maintain system accuracy. Our experimental results on both public and self-collected datasets demonstrate that Ground-Fusion outperforms existing low-cost SLAM systems in corner cases. We release the code and datasets at https://github.com/SJTUViSYS/Ground-Fusion.
+
+---
+
+### [ENWIDE](https://projects.asl.ethz.ch/datasets/doku.php?id=enwide)
+
+- **Year**: 2024
+- **Sensor**: 1x Ouster OS0-128
+- **Objective**: Odometry
+- **Environment**: Degraded Outdoor, Degraded Indoor
+- **System**: Handheld
+- **Publication**: ICRA 
+- **Abstract**: We present COIN-LIO, a LiDAR Inertial Odometry pipeline that tightly couples information from LiDAR intensity with geometry-based point cloud registration. The focus of our work is to improve the robustness of LiDAR-inertial odometry in geometrically degenerate scenarios, like tunnels or flat fields. We project LiDAR intensity returns into an intensity image, and propose an image processing pipeline that produces filtered images with improved brightness consistency within the image as well as across different scenes. To effectively leverage intensity as an additional modality, we present a novel feature selection scheme that detects uninformative directions in the point cloud registration and explicitly selects patches with complementary image information. Photometric error minimization in the image patches is then fused with inertial measurements and point-to-plane registration in an iterated Extended Kalman Filter. The proposed approach improves accuracy and robustness on a public dataset. We additionally publish a new dataset, that captures five real-world environments in challenging, geometrically degenerate scenes. By using the additional photometric information, our approach shows drastically improved robustness against geometric degeneracy in environments where all compared baseline approaches fail.
 
 ---
 
