@@ -65,6 +65,10 @@ The table below summarizes the details of each dataset:
 |[HeLiMOS](https://sites.google.com/view/helimos)|2024|Multi|1x OS2-128, 1x VLP-16C|1x Livox Avia, 1x Aeva Aeries II|Seg|Large|
 |[GEODE Dataset](https://github.com/PengYu-Team/GEODE_dataset)|2024|Multi|1x VLP-16C, 1x OS1-64|1x Livox Avia|Odom|Large|
 |[HK MEMS Dataset](https://github.com/RuanJY/HK_MEMS_Dataset)|2024|Multi|1x OS1-32|1x Robosense M1 LiDAR, 1x Realsense L515|Odom|Large|
+|[MAN TruckScenes](https://brandportal.man/d/QSf8mPdU5Hgj)|2024|Multi|4x OS0-64, 2x Hesai Pandar64|No|OD|Large|
+|[DiTer++](https://sites.google.com/view/diter-plusplus/) |2025|Multi|1x OS1-32/64/128|No|SLAM|Large|
+|[SynthmanticLiDAR](https://github.com/vpulab/SynthmanticLiDAR)|2025|Single|CARLA Simulated LiDAR|No|Seg|Large|
+
 
 ## Datasets
 ### [Ford Campus](https://robots.engin.umich.edu/SoftwareData/InfoFord)
@@ -649,3 +653,30 @@ N
 - **Abstract**: This paper presents a multimodular dataset, HK-MEMS, incorporating data from MEMS LiDARs, a camera, GNSS, and Inertial Navigation Systems. To our best knowledge, it is the first dataset to offer automotive-grade MEMS LiDAR data on urban roads for research in Simultaneous Localization and Mapping (SLAM).
 This dataset emphasizes extreme environments like degenerate urban tunnels and dynamic scenarios, aiming to enhance the robustness of SLAM systems.
 We collect 187 minutes and 75.4 kilometers of data. State-of-the-art SLAM methods are evaluated on this benchmark. The result highlights the challenges in extreme environments and underscores the ongoing need to enhance the robustness of SLAM systems. This dataset serves as a valuable platform for exploring the potential and limitations of MEMS LiDAR, and a challenge to enhance the robustness of SLAM in urban navigation scenarios.
+
+### [MAN TruckScenes](https://brandportal.man/d/QSf8mPdU5Hgj)  
+- **Year**: 2024  
+- **Sensor**: 2x Hesai Pandar64 LiDAR, 4x Ouster OS0 LiDAR, 6x Continental ARS540CES Radar, 4x Sekonix SF3324 RGB Camera, 2x Xsens MTi-680G IMU, 1x GeneSys ADMA-G-PRO+ GNSS  
+- **Objective**: Autonomous trucking perception  
+- **Environment**: Highway, rural, urban, terminal  
+- **System**: MAN TGX 18.510 truck  
+- **Publication**: NeurIPS  
+- **Abstract**: Autonomous trucking is a promising technology that can greatly impact modern logistics and the environment. Ensuring its safety on public roads is one of the main duties that requires an accurate perception of the environment. To achieve this, machine learning methods rely on large datasets, but to this day, no such datasets are available for autonomous trucks. In this work, we present MAN TruckScenes, the first multimodal dataset for autonomous trucking. MAN TruckScenes allows the research community to come into contact with truck-specific challenges, such as trailer occlusions, novel sensor perspectives, and terminal environments for the first time. It comprises more than 740 scenes of 20 s each within a multitude of different environmental conditions. The sensor set includes 4 cameras, 6 lidar, 6 radar sensors, 2 IMUs, and a high-precision GNSS. The dataset’s 3D bounding boxes were manually annotated and carefully reviewed to achieve a high quality standard. Bounding boxes are available for 27 object classes, 15 attributes, and a range of more than 230 m. The scenes are tagged according to 34 distinct scene tags, and all objects are tracked throughout the scene to promote a wide range of applications. Additionally, MAN TruckScenes is the first dataset to provide 4D radar data with 360° coverage and is thereby the largest radar dataset with annotated 3D bounding boxes. Finally, we provide extensive dataset analysis and baseline results. The dataset, development kit, and more are available online.
+
+- ### [DiTer++](https://sites.google.com/view/diter-plusplus/)  
+- **Year**: 2025  
+- **Sensor**: Ouster OS1-32 LiDAR, Ouster OS1-64/128 LiDAR, Intel Realsense D435i RGB-D, FLIR Boson ADK Thermal, Microstrain 3DM-GX5-25 IMU, Microstrain 3DM-GV7 IMU, Built-in 6-DoF IMU, Contact Sensors  
+- **Objective**: Multi-robot SLAM  
+- **Environment**: Structured and unstructured terrain  
+- **System**: Legged robots (multi-session)  
+- **Publication**: ICRA  
+- **Abstract**: We encounter large-scale environments where both structured and unstructured spaces coexist, such as on campuses. In this environment, lighting conditions and dynamic objects change constantly. To tackle the challenges of large-scale mapping under such conditions, we introduce DiTer++, a diverse terrain and multi-modal dataset designed for multi-robot SLAM in multi-session environments. According to our datasets’ scenarios, Agent-A and Agent-B scan the area designated for efficient large-scale mapping day and night, respectively. Also, we utilize legged robots for terrain-agnostic traversing. To generate the ground truth of each robot, we first build the survey-grade prior map. Then, we remove the dynamic objects and outliers from the prior map and extract the trajectory through scan-to-map matching. Our dataset and supplemental materials are available at [DiTer++ website](https://sites.google.com/view/diter-plusplus/).
+
+### [SynthmanticLiDAR](https://github.com/vpulab/SynthmanticLiDAR)  
+- **Year**: 2025  
+- **Sensor**: CARLA Simulated LiDAR  
+- **Objective**: LiDAR semantic segmentation  
+- **Environment**: Synthetic simulation  
+- **System**: CARLA simulator (Vehicle) 
+- **Publication**: ICIP  
+- **Abstract**: SynthmanticLiDAR is a synthetic dataset for LiDAR semantic segmentation, designed to bridge the gap between real and synthetic data. It is generated using a modified CARLA simulator with improved class labels, adjusted object distributions, and enhanced realism to align better with real-world datasets like SemanticKITTI. The dataset consists of 48,000 scans across 8 sequences and provides 30 semantic classes, including vehicles, pedestrians, and urban structures. SynthmanticLiDAR is evaluated using state-of-the-art segmentation models, demonstrating its effectiveness for pre-training and domain adaptation in real-world LiDAR perception tasks. The dataset and simulation tools are publicly available.  
