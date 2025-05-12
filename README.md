@@ -68,6 +68,10 @@ The table below summarizes the details of each dataset:
 |[MAN TruckScenes](https://brandportal.man/d/QSf8mPdU5Hgj)|2024|Multi|4x OS0-64, 2x Hesai Pandar64|No|OD|Large|
 |[DiTer++](https://sites.google.com/view/diter-plusplus/) |2025|Multi|1x OS1-32/64/128|No|SLAM|Large|
 |[SynthmanticLiDAR](https://github.com/vpulab/SynthmanticLiDAR)|2025|Single|CARLA Simulated LiDAR|No|Seg|Large|
+|[LiSu](https://github.com/malicd/LiSu)|2025|Single|CARLA Simulated LiDAR|No|Normal Estimation|Large|
+|[STU dataset](https://vision.rwth-aachen.de/stu-dataset)|2025|Single|128 CH (Unknown)|No|Seg|Small|
+|[REHEARSE-3D](https://sporsho.github.io/REHEARSE3D)|2025|Multi|OS-128|MEMS (256CH)|Seg|Small|
+|[CNS dataset](https://github.com/Hyunho111/CNS_dataset)|2025|Single|CARLA Simultaed LiDAR|No|PR|Large|
 
 
 ## Datasets
